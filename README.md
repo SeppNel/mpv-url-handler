@@ -1,4 +1,4 @@
-URL Handler for mpv player.  
+URL Handler for mpv player for Windows.  
 # Usage
 Extract to folder of choice and run exe file. It should create the registry keys necessary.  
 In config.yml change mpvPath to you mpv player executable path.  
