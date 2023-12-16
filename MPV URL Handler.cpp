@@ -41,6 +41,8 @@ void createRegistryKey(const wstring exePath) {
 	}
 	catch (const std::exception&) {
 		cout << "Exception during registry key creation\n";
+		cout << "Run as admin if you didn't\n";
+		wait4input();
 		exit(EXIT_FAILURE);
 	}
 
@@ -98,6 +100,7 @@ void removeHandler() {
 	}
 	catch (const std::exception& e) {
 		cout << "Exception removing handler:  " << e.what() << "\n";
+		cout << "Run as admin if you didn't\n";
 		exit(EXIT_FAILURE);
 	}
 }
@@ -118,6 +121,7 @@ void argumentHandler(int argc, char* argv[]) {
 		}
 
 		removeHandler();
+		cout << "Handler removed\n";
 		exit(EXIT_SUCCESS);
 	}
 	else if (option == "-u") {
