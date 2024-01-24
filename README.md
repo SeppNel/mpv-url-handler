@@ -8,7 +8,7 @@ Example url:
 ```
 mpv://http%3A%2F%2Fmyserver.com%2Fvideo.mkv
 ```
-Use something like urlencode in php to achieve this.
+Use something like urlencode in php to achieve this.  
 Valid protocols are http and https, although is easy to add more in the code.
 
 ## Command Line Options
