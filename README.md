@@ -2,12 +2,13 @@ URL Handler for mpv player for Windows.
 # Usage
 Extract to folder of choice and run exe file as admin. It should create the registry keys necessary.  
 In config.yml change mpvPath to you mpv player executable path.  
-After that any url starting with mpv:// should be opened with this, and if everything is okay it should play with mpv.  
+After that any encoded url starting with mpv:// should be opened with this, and if everything is okay it should play with mpv.  
 
 Example url: 
 ```
-mpv://http://myserver.com/video.mkv
+mpv://http%3A%2F%2Fmyserver.com%2Fvideo.mkv
 ```
+Use something like urlencode in php to achieve this.
 Valid protocols are http and https, although is easy to add more in the code.
 
 ## Command Line Options
